@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Borel', cursive;
+}
+
+body {
+    background-image: url(imagenes/fondo.jpg);
+}
+
+.contenedor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor .imagen {
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.contenedor__abajo .imagen {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.marshall {
+    height: 11rem;
+    top: 50%;
+    left: 20%;
+}
+
+.spiderman {
+    height: 11rem;
+    top: 50%;
+    left: 80%;
+}
+
+.rayo {
+    left: 50%;
+    top: 60%;
+    z-index: 10;
+    height: 15rem;
+}
+
+.bandera, .logo {
+    height: 11rem;
+}
+
+.juani {
+    height: 2.6rem;
+    margin-top: 125px;
+}
+
+.titulo h1 {
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    border: 3px double #fff;
+    border-radius: 1.2rem;
+}
+
+.info {
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+    text-align: center;
+    background-color: #333a;
+    border: 1px solid #444a;
+    border-radius: .9rem;
+}
+
+.saludo {
+    font-size: 2rem;
+    color: #aaa;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 600px) {
+    .marshall {
+        height: 16rem;
+    }
+    
+    .spiderman {
+        height: 16rem;
+    }
+    
+    .rayo {
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .marshall {
+        left: 30%;
+    }
+    
+    .spiderman {
+        left: 70%;
+    }
+}
+
